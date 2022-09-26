@@ -2,31 +2,28 @@ public class Main {
     public static void main(String[] args) {
         //Задание 1
         System.out.println("Задание 1");
-        int sum1, vklad1, i, percent1;
-        sum1 = 0;
-        vklad1 = 15000;
-        percent1 = 7;
-        i = 1;
-        while (sum1 < 12_000_000){
-            sum1 = sum1 + sum1 * percent1/100 + vklad1;
-            i++;
+        int oE, comet, thisYear, year, startPeriod, endPeriod;
+        year = 0;
+        thisYear = 2022;
+        startPeriod = thisYear - 200;
+        endPeriod = thisYear + 100;
+        comet = 79;
+        for (oE = 0; oE < startPeriod; oE += comet){
+            year = oE;
+            }
+        while (year <= endPeriod) {
+            System.out.println(year);
+            year = year + comet;
         }
-        System.out.printf("Месяц %d , сумма накоплений равна %d рублей\n", i, sum1);
+
 
         //Задание 2
-        System.out.println("Задание 1");
-        int sum2, vklad2, j, percent2;
-        sum2 = 0;
-        vklad2 = 15000;
-        percent2 = 7;
-        j = 1;
-        while (sum2< 12_000_000){
-            sum2 = sum2 + sum2 * percent2/100 + vklad2;
-            j++;
-            if (j % 6 == 0){
-                System.out.printf("Месяц %d , сумма накоплений равна %d рублей\n", j, sum1);
+        System.out.println("Задание 2");
+       for (int i = 1; i <= 10; i++){
+            System.out.println("2*" + i + "=" + (i * 2));
             }
         }
+        /*
         //Задание 3
         System.out.println("\nЗадание 3");
         int sum3, vklad3, month, percent3, year;
@@ -56,5 +53,5 @@ public class Main {
             day++;
         }
 
-    }
+    }*/
 }
